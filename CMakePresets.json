@@ -46,7 +46,7 @@
       }
     },
     {
-      "name": "release-config",
+      "name": "release",
       "displayName": "Release Build",
       "inherits": [
         "release",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "name": "debug-config",
+      "name": "debug",
       "displayName": "Debug",
       "inherits": [
         "debug",
@@ -65,18 +65,18 @@
   "buildPresets": [
     {
       "name": "release",
-      "configurePreset": "release-config"
+      "configurePreset": "release"
     },
     {
       "name": "debug",
-      "configurePreset": "debug-config"
+      "configurePreset": "debug"
     }
   ],
   "testPresets": [
     {
       "name": "release",
       "displayName": "Release",
-      "configurePreset": "release-config",
+      "configurePreset": "release",
       "output": {
         "verbosity": "extra",
         "outputOnFailure": true
@@ -89,7 +89,7 @@
     {
       "name": "debug",
       "displayName": "Debugr",
-      "configurePreset": "debug-config",
+      "configurePreset": "debug",
       "output": {
         "verbosity": "extra",
         "outputOnFailure": true

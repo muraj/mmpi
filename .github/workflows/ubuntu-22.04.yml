@@ -9,7 +9,7 @@ on:
 
 jobs:
   ci:
-    name: ${{ matrix.compiler }}
+    name: ${{ matrix.cc }}-${{ matrix.mpi }}
     runs-on: ubuntu-22.04
     env:
       cache-name: cache-v3-${{ matrix.compiler }}
@@ -17,6 +17,7 @@ jobs:
       fail-fast: false # True stops all on first error. Stick to false when debugging
       matrix:
         mpi: [ openmpi, mpich ]
+        cc: [ gcc-12, clang-15 ]
         include:
           - { cc: gcc-12, cxx: g++-12 }
           - { cc: clang-15, cxx: clang++-15 }

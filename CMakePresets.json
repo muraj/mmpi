@@ -46,7 +46,7 @@
       }
     },
     {
-      "name": "release",
+      "name": "release-build",
       "displayName": "Release Build",
       "inherits": [
         "release",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "name": "debug",
+      "name": "debug-build",
       "displayName": "Debug",
       "inherits": [
         "debug",
@@ -65,11 +65,11 @@
   "buildPresets": [
     {
       "name": "release",
-      "configurePreset": "release"
+      "configurePreset": "release-build"
     },
     {
       "name": "debug",
-      "configurePreset": "debug"
+      "configurePreset": "debug-build"
     }
   ],
   "testPresets": [

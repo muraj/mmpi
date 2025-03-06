@@ -74,8 +74,8 @@
   ],
   "testPresets": [
     {
-      "name": "release",
-      "displayName": "Release",
+      "name": "release-test",
+      "displayName": "Release Test",
       "configurePreset": "release",
       "output": {
         "verbosity": "extra",
@@ -87,8 +87,8 @@
       }
     },
     {
-      "name": "debug",
-      "displayName": "Debugr",
+      "name": "debug-test",
+      "displayName": "Debug Test",
       "configurePreset": "debug",
       "output": {
         "verbosity": "extra",

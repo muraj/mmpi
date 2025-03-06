@@ -39,7 +39,7 @@ jobs:
         uses: lukka/run-vcpkg@v11
 
       - name: Make build directory
-        run: mkdir -p build/release
+        run: mkdir -p build/release-build
 
       - name: Run CMake
         uses: lukka/run-cmake@v10.8
